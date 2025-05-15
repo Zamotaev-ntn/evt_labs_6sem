@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые фильмы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #F5F5DC; /* Более выразительный цвет фона */
+        }
+        .container {
+            max-width: 1440px; /* Ширина контента */
+            margin: 0 auto; /* Центрирование контента */
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        img {
+            width: 300px; /* Установлен одинаковый размер для всех изображений */
+            height: 200px; /* Установлен одинаковый размер для всех изображений */
+            object-fit: cover; /* Обеспечивает обрезку изображений, сохраняя пропорции */
+            border-radius: 15px; /* Закругленные края изображений */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none; /* Убрать маркеры списка */
+            padding: 0;
+        }
+        nav a {
+            color: black; /* Цвет якорных ссылок */
+            text-decoration: none; /* Убрать подчеркивание */
+        }
+        #film1 p {
+            text-align: center; /* Выравнивание текста для первого фильма */
+        }
+        #film2 p {
+            text-align: justify; /* Выравнивание текста для второго фильма */
+        }
+        #film3 p {
+            text-align: right; /* Выравнивание текста для третьего фильма */
+        }
+        /* Подключение шрифтов */
+        @font-face {
+            font-family: 'MyFont1';
+            src: url('fonts/myfont1.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'MyFont2';
+            src: url('fonts/myfont2.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'MyFont3';
+            src: url('fonts/myfont3.ttf') format('truetype');
+        }
+        #film1, #film2, #film3 {
+            margin-bottom: 20px; /* Отступы между фильмами */
+        }
+        #film1 p, #film2 p, #film3 p {
+            font-family: MyFont1; /* Применение шрифта для всего текста */
+        }
+        #film2 p {
+            font-family: MyFont2; /* Шрифт для второго фильма */
+        }
+        #film3 p {
+            font-family: MyFont3; /* Шрифт для третьего фильма */
+        }
+        strong {
+            font-weight: bold; /* Применение жирного начертания */
+        }
+        .bold {
+            font-weight: bold; /* Применение жирного начертания */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Мои любимые фильмы</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#film1">Оружейный барон</a></li>
+            <li><a href="#film2">Интерстеллар</a></li>
+            <li><a href="#film3">Повелители хаоса</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="film1">Фильм 1: Оружейный барон</h2>
+    <p style="font-family: MyFont1; text-align: center;">
+        Краткое содержание фильма <strong>«Оружейный барон»</strong>. Криминальная драма 2005 года, 
+        третий полнометражный фильм режиссёра <span class="bold">Эндрю Никкола</span>, в главных ролях 
+        <b>Николас Кейдж</b>, Джаред Лето, Бриджит Мойнахан и Итан Хоук. Фильм следует за Юрием Орловым, 
+        который незадолго до распада СССР занялся незаконной торговлей оружием и в конечном итоге стал 
+        хорошо известным и беспринципным торговцем оружием.
+    </p>
+    <img src="img7.jpg" alt="Кадр из фильма Оружейный барон">
+    <img src="img8.jpg" alt="Кадр из фильма Оружейный барон">
+    <img src="img9.jpg" alt="Кадр из фильма Оружейный барон">
+
+    <table>
+        <tr>
+            <th>Параметр</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td>Год</td>
+            <td>2005</td>
+        </tr>
+        <tr>
+            <td>Страна</td>
+            <td>США</td>
+        </tr>
+        <tr>
+            <td>Жанр</td>
+            <td>Драма</td>
+        </tr>
+        <tr>
+            <td>Режиссер</td>
+            <td><strong>Эндрю Никкол</strong></td>
+        </tr>
+    </table>
+
+    <h2 id="film2">Фильм 2: Интерстеллар</h2>
+    <p style="font-family: MyFont2; text-align: justify;">
+        Краткое содержание фильма <strong>«Интерстеллар»</strong>. Эпическая научно-фантастическая драма 
+        2014 года, девятый полнометражный фильм режиссёра <b>Кристофера Нолана</b>. Действие кинокартины 
+        разворачивается в недалёком будущем, где людям на всей планете угрожают катастрофические 
+        изменения климата и массовый голод.
+    </p>
+    <img src="img4.jpg" alt="Кадр из фильма Интерстеллар">
+    <img src="img5.jpg" alt="Кадр из фильма Интерстеллар">
+    <img src="img6.jpg" alt="Кадр из фильма Интерстеллар">
+
+    <table>
+        <tr>
+            <th>Параметр</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td>Год</td>
+            <td><strong>2014</strong></td>
+        </tr>
+        <tr>
+            <td>Страна</td>
+            <td>США</td>
+        </tr>
+        <tr>
+            <td>Жанр</td>
+            <td>Научная фантастика</td>
+        </tr>
+        <tr>
+            <td>Режиссер</td>
+            <td><strong>Кристофер Нолан</strong></td>
+        </tr>
+    </table>
+
+    <h2 id="film3">Фильм 3: Повелители хаоса</h2>
+    <p style="font-family: MyFont3; text-align: right;">
+        Краткое содержание фильма <strong>«Повелители хаоса»</strong>. Это биографический триллер 
+        режиссёра <b>Юнаса Окерлунда</b>, посвящённый трагическим событиям вокруг норвежской 
+        блэк-металлической сцены начала 1990-х.
+    </p>
+    <img src="img3.jpg" alt="Кадр из фильма Повелители хаоса">
+    <img src="img2.jpg" alt="Кадр из фильма Повелители хаоса">
+    <img src="img1.jpg" alt="Кадр из фильма Повелители хаоса">
+
+    <table>
+        <tr>
+            <th>Параметр</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td>Год</td>
+            <td>2018</td>
+        </tr>
+        <tr>
+            <td>Страна</td>
+            <td><strong>Швеция</strong></td>
+        </tr>
+        <tr>
+            <td>Жанр</td>
+            <td>Триллер</td>
+        </tr>
+        <tr>
+            <td>Режиссер</td>
+            <td><strong>Юнас Окерлунд</strong></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимации</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Кнопка с вибрацией */
+        .vibrating-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: vibrate 0.1s infinite; /* Анимация вибрации */
+            transition: background-color 0.3s;
+        }
+
+        .vibrating-button:hover {
+            animation: none; /* Остановка вибрации при наведении */
+            background-color: green; /* Изменение цвета на зеленый */
+        }
+
+        @keyframes vibrate {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Ссылка с анимацией */
+        .animated-link {
+            color: black;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-link::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: green;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .animated-link:hover {
+            color: green;
+        }
+
+        .animated-link:hover::after {
+            transform: translateX(-50%) scaleX(1); /* Появление подчеркивания */
+        }
+
+        /* Анимация мячика */
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            transition: background-color 10s;
+            animation: bounce 2s infinite;
+        }
+
+        .ball {
+            background-color: green;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-200px); /* Подъем мяча */
+            }
+            60% {
+                transform: translateY(-100px); /* Отскок на половину высоты */
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="vibrating-button">Click on me</button>
+
+    <a href="#" class="animated-link">Link to a very important site</a>
+
+    <div class="ball"></div>
+
+</body>
+</html>

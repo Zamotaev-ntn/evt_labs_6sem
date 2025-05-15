@@ -12,7 +12,7 @@
 
 [Link to deploy](https://zamotaev-ntn.github.io/evt_labs_6sem/)
 
-![](https://giphy.com/gifs/ProBItExchange-reaction-funny-animals-L9v0RjGPMB7lYWTe2L.gif)
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGxhY2Q0ZWFmajNhM2MwaWt3ZDEwYjF5cDlrZjZ4b3BidXcyd2RhZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L9v0RjGPMB7lYWTe2L/giphy.gif)
 
 
 ### Example 1: Area When Base and Height is Known
